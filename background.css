@@ -1,0 +1,41 @@
+#background-video {
+    position: fixed;  /* Fixe la vidéo à l'écran */
+    top: 0;
+    left: 0;
+    width: 100%;      /* Prend toute la largeur */
+    height: 110%;
+    transform: scale(1.1);
+    object-fit: cover; /* Pour que la vidéo recouvre bien toute la surface sans déformation */
+    z-index: -1;      /* S'assure que la vidéo est derrière le contenu textuel */
+}
+#background-image{
+    position: fixed !important;  /* Fixe la vidéo à l'écran */
+    top: 0;
+    left: 0;
+    width: 100%;      /* Prend toute la largeur */
+    height: 100%;
+    transform: scale(1.1);
+    object-fit: cover; /* Pour que la vidéo recouvre bien toute la surface sans déformation */
+    z-index: -1;      /* S'assure que la vidéo est derrière le contenu textuel */
+}
+.vid-content{
+    min-height: calc(100vh - var(--header-height));
+    background: linear-gradient(var(--grey), 65%, transparent);
+    display: flex;
+    padding: 0 10%;
+}
+.vid-text{
+    align-content: center;
+}
+.vid-text > * {
+    margin: 15px;
+}
+.text-content {
+    background-color: var(--grey);
+    z-index: 2;
+    min-height: 100vh; /* ou une taille précise */
+    height: auto;
+}
+p{
+    color: white;
+}
